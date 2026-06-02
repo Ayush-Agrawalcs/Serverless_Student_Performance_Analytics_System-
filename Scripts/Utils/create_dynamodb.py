@@ -1,6 +1,6 @@
 import boto3
 
-dynamodb=boto3.resource('dynamodb')
+dynamodb=boto3.client('dynamodb')
 
 table=dynamodb.create_table(
     TableName="student_performance",
